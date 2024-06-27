@@ -1,0 +1,13 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+cube_view:
+    path: /cube/{number}
+    controller: App\Controller\CubeViewController::showCube
+
+hello_my_name_is_view:
+    path: /hello/{name}/{surname}
+    controller: App\Controller\HelloMyNameIsViewController::greet
